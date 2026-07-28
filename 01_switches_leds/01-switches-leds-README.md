@@ -36,6 +36,8 @@ All I/O uses the `LVCMOS33` standard, matching the Basys 3's 3.3 V I/O bank supp
 
 Each switch drives its corresponding LED. Response is immediate — propagation is limited only by I/O buffer delay, on the order of nanoseconds.
 
+![Basys 3 running the design, SW0–SW3 up and LD0–LD3 lit](board.jpg)
+
 ## Debugging notes
 
 **Factory demo persisted after programming.** After programming reported success, the seven-segment display continued running the factory counter demo and the LEDs did not respond correctly. Cause: the MODE jumper (JP1) was in the QSPI position, so the FPGA configured itself from onboard flash at power-up rather than accepting the JTAG-programmed bitstream. Moving the jumper to JTAG resolved it.
