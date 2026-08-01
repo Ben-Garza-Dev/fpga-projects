@@ -9,7 +9,6 @@ Each project directory contains the RTL source, constraints file, a testbench wh
 | # | Project | Concepts |
 |---|---------|----------|
 | 01 | [Switches to LEDs](01_switches_leds/) | Combinational logic, XDC pin constraints, full synthesis-to-hardware flow |
-
 | 02 | [Seven-Segment Counter](02_seven_segment_display/) | Sequential logic, clock division, enable pulses, combinational decoding |
 
 *In progress: four-digit multiplexing, UART transceiver with self-checking testbench, SPI/I²C master controllers.*
