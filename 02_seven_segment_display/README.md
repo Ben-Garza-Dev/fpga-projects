@@ -77,6 +77,7 @@ The `-1` accounts for the counter starting at zero — counting 0 through 99,999
 ## Build
 
 Vivado ML Standard 2025.2, targeting `xc7a35tcpg236-1`. Set the MODE jumper (JP1) to JTAG before programming. Run Synthesis → Implementation → **Generate Bitstream** (implementation alone does not produce a `.bit` file), then Open Hardware Manager → Auto Connect → Program Device.
+![Basys 3 displaying the counter on AN0](board.jpg)
 
 ## Next steps
 
